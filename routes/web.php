@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::resource('/productos', ProductoController::class);
-    Route::get('/dashboard', function(){
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/usuarios', function(){
+        return view('usuarios');
+    })->name('usuarios');
 });
